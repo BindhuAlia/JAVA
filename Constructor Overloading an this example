@@ -1,0 +1,35 @@
+public class Box {
+	int l,b,h;
+	public Box()
+	{
+		System.out.println("Default Constructor");
+		l=b=h=0;
+	}
+	public Box(int n)
+	{
+		System.out.println("Single Argument");
+		l=b=h=n;
+	}
+	public Box(int l,int b,int h)
+	{
+		System.out.println("3 Argument");
+		this.l=l;
+		this.b=b;
+		this.h=h;
+	}
+	public int volume()
+	{
+		return l*b*h;
+	}
+	public static void main(String[] args) {
+		Box ob=new Box();
+		Box ob1=new Box(5);
+		Box ob2=new Box(3,4,5);
+		System.out.println(ob.volume());
+		System.out.println(ob1.volume());
+		System.out.println(ob.volume());
+		
+
+	}
+
+}
