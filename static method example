@@ -1,0 +1,11 @@
+public class Staticvar {
+			public static int getArea(int l,int b)
+			{
+				return(l*b);
+			}
+	public static void main(String[] args) {
+		System.out.println(getArea(5,10));
+			
+	}
+
+}
