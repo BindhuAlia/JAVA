@@ -1,0 +1,18 @@
+public class MethodOverLoadPromotion {
+	public void Method1(int a)
+	{
+		System.out.println("integer");
+	}
+	public void Method1(float b)
+	{
+		System.out.println("float arguments");
+	}
+	public static void main(String[] args) {
+		MethodOverLoadPromotion ob =new MethodOverLoadPromotion();
+		ob.Method1('a');//converts char to int
+		ob.Method1(3.5f);
+		//ob.Method1(3.5);--cant convert double to int or float
+
+	}
+
+}
