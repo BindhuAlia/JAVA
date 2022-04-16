@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class OnlyAlpha {
+
+	public static void main(String[] args) {
+		Scanner ob=new Scanner(System.in);
+		String s=ob.nextLine();
+		String ans="";
+		char ch[]=s.toCharArray();
+		for(int i=0;i<s.length();i++)
+		{
+			if(Character.isLetter(ch[i]))ans+=ch[i];
+		}
+		ob.close();
+		System.out.println(ans);
+
+	}
+
+}
